@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff !important;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-custom {
+    background-color: #ffffff;
+    color: #667eea;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #f0f0f0;
+    color: #667eea;
+}
+
+.fruit-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.fruit-item {
+    font-size: 5rem;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.fruit-item:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.fruit-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fruit-item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.fruit-item:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.fruit-item:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .fruit-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .fruit-item {
+        font-size: 3rem;
+    }
+}

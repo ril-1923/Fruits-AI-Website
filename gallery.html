@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🍎 Fresh Fruits</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benefits.html">Benefits</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5 page-title">Our Fruit Collection</h1>
+
+        <div class="row g-4" id="fruitGallery">
+            <div class="col-md-4">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <p>Crisp and sweet, packed with fiber and vitamin C</p>
+                    <div class="price">$3.99/lb</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍊</div>
+                    <h3>Juicy Oranges</h3>
+                    <p>Bursting with vitamin C and natural sweetness</p>
+                    <div class="price">$4.49/lb</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍌</div>
+                    <h3>Ripe Bananas</h3>
+                    <p>Perfect for energy, rich in potassium</p>
+                    <div class="price">$2.99/lb</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍇</div>
+                    <h3>Sweet Grapes</h3>
+                    <p>Delicious snack packed with antioxidants</p>
+                    <div class="price">$5.99/lb</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍓</div>
+                    <h3>Fresh Strawberries</h3>
+                    <p>Sweet and juicy, full of vitamins</p>
+                    <div class="price">$6.99/lb</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🥭</div>
+                    <h3>Tropical Mangoes</h3>
+                    <p>Exotic and sweet, rich in vitamin A</p>
+                    <div class="price">$7.99/lb</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
